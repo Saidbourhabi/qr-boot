@@ -29,7 +29,7 @@ const qrSize = isMobile ? 200 : 280;
 return (
     <main className="min-h-screen bg-black text-white flex items-center justify-center px-4 py-6 sm:p-6">
         <Helmet>
-          <title>QR Code Generator: Create your Free QR Code</title>
+          <title>QR Code Generator | Create your Free QR Code</title>
           <meta name="description" content="Generate branded QR codes in seconds, share them with your audience, and instantly track your scan data." />
         </Helmet>
       <div className="w-full max-w-5xl">
