@@ -1,0 +1,11 @@
+@import "tailwindcss";
+@import '@fontsource-variable/readex-pro/wght.css';
+
+@layer base {
+    html {
+    scroll-behavior: smooth;
+    }
+    body {
+    font-family: 'Readex Pro Variable', sans-serif;
+}
+}
