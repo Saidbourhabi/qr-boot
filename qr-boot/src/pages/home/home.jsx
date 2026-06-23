@@ -7,6 +7,7 @@ import { useMediaQuery } from "../../hooks/useMediaQuery";
 import { useQRDownload } from "../../hooks/useQRDownload";
 // Import the logo
 import logo from "../../assets/qrboot.svg";
+import { Helmet } from "react-helmet-async";
 
 const DEMO_URL = "https://www.myweb.com/";
 const REPO_URL = "https://github.com/saidbourhabi/qr-boot.git";
@@ -27,6 +28,10 @@ const qrSize = isMobile ? 200 : 280;
 
 return (
     <main className="min-h-screen bg-black text-white flex items-center justify-center px-4 py-6 sm:p-6">
+        <Helmet>
+          <title>QR Code Generator: Create your Free QR Code</title>
+          <meta name="description" content="Generate branded QR codes in seconds, share them with your audience, and instantly track your scan data." />
+        </Helmet>
       <div className="w-full max-w-5xl">
         <header className="w-full flex flex-col items-center justify-between sm:flex-row sm:justify-between sm:items-center gap-3 mb-8 sm:mb-10">
           {/* Replace h1 with the logo image */}
