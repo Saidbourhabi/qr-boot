@@ -104,7 +104,7 @@ return (
           </div>
         </div>
 
-        <footer className="text-center text-gray-500 text-xs sm:text-sm mt-12 sm:mt-16">
+        <footer className="text-center text-white text-xs sm:text-sm mt-12 sm:mt-16">
           made by{" "}
           <a
             className="text-[#e4ff30] hover:underline"
