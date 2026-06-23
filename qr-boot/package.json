@@ -12,6 +12,7 @@
   "dependencies": {
     "@plausible-analytics/tracker": "^0.4.5",
     "@tailwindcss/vite": "^4.3.1",
+    "@vercel/analytics": "^2.0.1",
     "qrcode": "^1.5.4",
     "react": "^19.2.7",
     "react-dom": "^19.2.7",
