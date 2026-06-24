@@ -24,6 +24,6 @@ return (
 }
 
 export const secondaryButtonClass = `
-    w-full cursor-pointer py-3.5 sm:py-4 bg-zinc-900 hover:bg-zinc-800 border border-[#e4ff30] hover:border-zinc-600
+    w-full flex items-center justify-center gap-2 cursor-pointer py-3.5 sm:py-4 bg-black hover:bg-white/20 border-2 border-[#e4ff30] hover:border-white
     rounded font-medium transition-all flex items-center justify-center gap-2 text-sm sm:text-base
 `;

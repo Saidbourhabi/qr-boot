@@ -5,6 +5,7 @@ import { useClipboard } from "../../hooks/useClipboard";
 import { useDebouncedValue } from "../../hooks/useDebouncedValue";
 import { useMediaQuery } from "../../hooks/useMediaQuery";
 import { useQRDownload } from "../../hooks/useQRDownload";
+import { LuClipboardPaste } from "react-icons/lu";
 // Import the logo
 import logo from "../../assets/qrboot.svg";
 import { Helmet } from "react-helmet-async";
@@ -56,7 +57,7 @@ return (
             <div>
               <label
                 htmlFor="qr-input"
-                className="block text-xs sm:text-sm text-gray-400 mb-2 tracking-wide"
+                className="block text-xs sm:text-sm text-white mb-2 tracking-wide"
               >
                 Enter your Website
               </label>
@@ -66,7 +67,7 @@ return (
                 value={text}
                 onChange={(e) => setText(e.target.value)}
                 placeholder="https://myweb.com or any link..."
-                className="w-full px-4 sm:px-6 py-4 sm:py-5 bg-black border text-[#e4ff30] border-white  rounded text-base sm:text focus:border-[#e4ff30] focus:ring-1 focus:ring-[#e4ff30] outline-none transition-all"
+                className=" w-full px-4 sm:px-6 py-4 sm:py-5 bg-black border-2 border-white text-[#e4ff30] text-base sm:text rounded-lg shadow-[2.5px_3px_0_#e4ff30] focus:shadow-[5.5px_7px_0_#e4ff30] transition-all outline-none focus:border-[#ffffff]"
               />
             </div>
 
@@ -76,7 +77,7 @@ return (
               className={secondaryButtonClass}
               aria-label="Paste from clipboard"
             >
-              Paste from Clipboard
+              <LuClipboardPaste className="text-2xl text-[#e4ff30]" />  Paste from Clipboard
             </button>
 
             <div className="space-y-3 sm:space-y-4 pt-2 sm:pt-4">
